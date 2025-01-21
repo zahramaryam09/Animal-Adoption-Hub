@@ -3,79 +3,664 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>INTRO</title>
   </head>
   <body>
     <header>
-      <div class="logo"></div>
+      <div class="logo">
+        <i class="fa-solid fa-paw"></i>
+      </div>
       <div class="options">
         <ul class="list1">
-          <li>Home</li>
-          <li>Categories</li>
-          <li>Rewiews</li>
-        </ul>
+          <li class="l1" data-section="main">Home</li>
+          <li class="l1" data-section="main2">Categories</li>
+          <li class="l1" data-section="why-adopt">About Us</li>
+          <li class="l1" data-section="b_main">Blog list</li>
+      </ul>
       </div>
       <div class="menu">
-        <input type="search" name="" id="" placeholder="Search...">
-            <div class="btns">
-                <button class="login">Log in</button>
-                <button class="signup">Sign up</button>
-            </div>
+        <input type="search" name="" id="searchInput" placeholder="Search..." />
+        <div class="btns">
+          <button class="login">Sign in</button>
+          <button class="signup">Sign up</button>
         </div>
+      </div>
     </header>
 
+
     <div class="main">
-        <div class="content">
-            <div class="heading">
-                <h1>Welcome to the Animal Adoption Hub</h1>
-            </div>
-            <div class="description">
-                <p>Discover wonderful animals looking for a loving home. Explore their profiles and learn about the adoption process.</p>
-                <ul>
-                    <li>Easy search for adoptable animals</li>
-                    <li>User-friendly application process</li>
-                    <li>Information on caring for pets</li>
-                </ul>
-            </div>
+      <div class="content">
+        <div class="heading">
+          <h1>Welcome to the Animal Adoption Hub</h1>
         </div>
-        <div class="pic">
+        <div class="description">
+          <p>
+            Discover wonderful animals looking for a loving home. Explore their
+            profiles and learn about the adoption process.
+          </p>
+          <ul>
+            <li>Easy search for adoptable animals</li>
+            <li>User-friendly application process</li>
+            <li>Information on caring for pets</li>
+          </ul>
+        </div>
+      </div>
+      <!--<div class="pic">
             <img src="animals1.jpeg" alt="Adoptable Animals" />
-        </div>
+        </div>-->
     </div>
 
     <div class="main2">
-        <div class="content2">
-            <div class="heading2">
-                <h1>Website features</h1>
-            </div>
-            <div class="description2">
-                <!--<p>Discover wonderful animals looking for a loving home. Explore their profiles and learn about the adoption process.</p>-->
-                <ul>
-                    <li>User Registration/Login</li>
-                    <li>Animal Listings</li>
-                    <li>Animal Profiles</li>
-                    <li>Search and Filter Options</li>
-                    <li>Adoption Application Form</li>
-                    <li>Admin Panel:</li>
-                    <li>Contact Form</li>
-                </ul>
-            </div>
-            <div class="subheading">
-                <h1>Group Members</h1>
-            </div>
-            <div class="description3">
-                <p>BSCS SS2</p>
-                <ul>
-                    <li>Maryam Zahra S063</li>
-                    <li>Laraib Rehman S077</li>
-                    <li>Manahil Fatima S060</li>
-                </ul>
-            </div>
+      <h1 class="heading2">CATEGORIES</h1>
+
+      <div class="content2" onclick="navigateToSection('dogs_sect')">
+        <div class="dog_head categ">
+          <div class="img_box">
+            <img src="dog3.jpg" alt="" />
+          </div>
+          <div class="img_content">
+            <h2>DOGS</h2>
+            <p>Paws-itively loyal friends for every adventure!</p>
+          </div>
         </div>
-        <div class="pic2">
-            <img src="cat.jpeg" alt="Adoptable Animals" />
+
+        <div class="cat_head categ" onclick="navigateToSection('cats_sect')">
+          <div class="img_box">
+            <img src="cat1.jpg" alt="" />
+          </div>
+          <div class="img_content">
+            <h2>CATS</h2>
+            <p>Whisker-filled wonders ready to steal your heart!</p>
+          </div>
+        </div>
+
+        <div class="parrots_head categ" onclick="navigateToSection('parrots_sect')">
+          <div class="img_box">
+            <img src="parrot1.jpg" alt="" />
+          </div>
+          <div class="img_content">
+            <h2>PARROTS</h2>
+            <p>Chatterboxes with feathers—ready to be your wingman!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main3" id="dogs_sect">
+      <h1 class="dog_list">DOGS</h1>
+      <p class="dog_list_desc">
+        Looking for a furry best friend? Our dogs are ready to wag their tails
+        into your heart! From playful pups to gentle seniors, we’ve got the
+        perfect match for every lifestyle. Adopt today and let the adventures
+        begin!
+      </p>
+      <i class="fa-solid fa-chevron-left d-b-l"></i>
+      <i class="fa-solid fa-chevron-right d-b-r"></i>
+      <div class="slider_wrapper">
+        <div class="dog_slider">
+          <div class="dog1 dog_img">
+            <img src="dog2.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG1</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog2 dog_img">
+            <img src="dog1.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG2</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog3 dog_img">
+            <img src="dog3.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG3</h1>
+              <h3>AGE : 3</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog4 dog_img">
+            <img src="dog4.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG4</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog5 dog_img">
+            <img src="dog5.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG5</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog6 dog_img">
+            <img src="dog6.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG6</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog7 dog_img">
+            <img src="dog8.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG7</h1>
+              <h3>AGE : 3.5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog8 dog_img">
+            <img src="dog7.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG8</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog9 dog_img">
+            <img src="dog9.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG9</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog10 dog_img">
+            <img src="dog10.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>DOG10</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main3 main4" id="cats_sect">
+      <h1 class="dog_list">CATS</h1>
+      <p class="dog_list_desc">
+        Looking for a purr-fect companion? Our cats are ready to curl up in your heart and home! From curious kittens to laid-back lap cats, we have the ideal feline friend for every personality. Adopt today and start a lifetime of cuddles and playful moments!
+      </p>
+      <i class="fa-solid fa-chevron-left c-b-l"></i>
+      <i class="fa-solid fa-chevron-right c-b-r"></i>
+      <div class="slider_wrapper">
+        <div class="dog_slider cat_slider">
+          <div class="dog1 dog_img">
+            <img src="cat1.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT1</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog2 dog_img">
+            <img src="cat2.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT2</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog3 dog_img">
+            <img src="cat3.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT3</h1>
+              <h3>AGE : 3</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog4 dog_img">
+            <img src="cat4.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT4</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog5 dog_img">
+            <img src="cat5.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT5</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog6 dog_img">
+            <img src="cat6.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT6</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog7 dog_img">
+            <img src="cat8.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT7</h1>
+              <h3>AGE : 3.5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog8 dog_img">
+            <img src="cat7.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT8</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog9 dog_img">
+            <img src="cat9.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT9</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog10 dog_img">
+            <img src="cat10.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>CAT10</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main3 main4 main5" id="parrots_sect">
+      <h1 class="dog_list">PARROTS</h1>
+      <p class="dog_list_desc">
+        Looking for a feathered friend to brighten your days? Our parrots are ready to fill your home with color and cheerful chatter! From playful parakeets to intelligent macaws, we have the perfect winged companion for every bird lover. Adopt today and let the fun take flight!
+      </p>
+      <i class="fa-solid fa-chevron-left p-b-l"></i>
+      <i class="fa-solid fa-chevron-right p-b-r"></i>
+      <div class="slider_wrapper">
+        <div class="dog_slider parrot_slider">
+          <div class="dog1 dog_img">
+            <img src="parrot1.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT1</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog2 dog_img">
+            <img src="parrot2.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT2</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog3 dog_img">
+            <img src="parrot10.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT3</h1>
+              <h3>AGE : 3</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog4 dog_img">
+            <img src="parrot9.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT4</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog5 dog_img">
+            <img src="parrot8.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT5</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog6 dog_img">
+            <img src="parrot7.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT6</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog7 dog_img">
+            <img src="parrot6.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT7</h1>
+              <h3>AGE : 3.5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog8 dog_img">
+            <img src="parrot5.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT8</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog9 dog_img">
+            <img src="parrot4.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT9</h1>
+              <h3>AGE : 5</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+          <div class="dog10 dog_img">
+            <img src="parrot3.jpg" alt="" />
+            <div class="dog_sub">
+              <h1>PARROT10</h1>
+              <h3>AGE : 2</h3>
+              <h3 class="availability">AVAILABLE FOR ADOPTION</h3>
+              <button class="adopt">ADOPT</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="why-adopt">
+    <h2>Why Adopt from Us? </h2>
+    <div class="adopt-container">
+        <div class="adopt-box">
+            <img src="cat6.jpg">
+            <p>Give animals a second chance at life. They deserve love too! </p>
+        </div>
+        <div class="adopt-box">
+            <img src="dog7.jpg">
+            <p>Find a forever friend and bring joy to your home. </p>
+        </div>
+        <div class="adopt-box">
+            <img src="dog9.jpg">
+            <p>All pets are vaccinated and healthy, ready for a loving home. </p>
         </div>
     </div>
+  </div>
+
+
+  <div class="b_main">
+      <h2 class="b_page-heading">Blogs</h2>
+  
+      <section class="b_section">
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="Animals.html">
+              <img src="img/1.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="Animals.html">
+              <h3>Tale of that adopted dog</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+  
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="#">
+              <img src="img/2.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="#">
+              <h3>Pet Adoption chronicals</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+  
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="Animals.html">
+              <img src="img/1.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="Animals.html">
+              <h3>Give new life to little beasts</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+  
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="#">
+              <img src="img/2.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="#">
+              <h3>Pet Adoption chronicals</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+  
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="categories.html">
+              <img src="img/1.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="categories.html">
+              <h3>Pet Adoption chronicals</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+  
+        <div class="b_card">
+          <div class="b_card-image">
+            <a href="#">
+              <img src="img/2.jpg" alt="Card Image">
+            </a>
+          </div>
+  
+          <div class="b_card-description">
+            <a href="#">
+              <h3>Pet Adoption chronicals</h3>
+            </a>
+            <div class="b_card-meta">
+              Posted by Admin on 23/01/2018 in
+              <a href="#">Web Dev</a>
+            </div>
+            <p>
+              Adopting a pet can be a life-changing experience for both the animal and the adopter. From providing emotional support to offering a sense of purpose, the power of pet adoption extends beyond just finding a home for a pet.
+            </p>
+            <a href="https://medium.com/tag/animal-adoptions" class="b_btn-readmore">Read more</a>
+          </div>
+        </div>
+      </section>
+  
+      <div class="b_pagination">
+        <a href="#">Prev</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">Next</a>
+      </div>
+    </div>
+
+    <!--****************FORM***************-->
+    <div class="form_main">
+      <!-- Sign In Form -->
+      <div class="form-container" style="display: none;">
+        <div class="container">
+          <div class="heading">Sign In</div>
+          <form action="formhandler.php" method="post" class="form">
+            <input required class="input" type="email" name="email" id="email1" placeholder="E-mail">
+            <input required class="input" type="password" name="password" id="password1" placeholder="Password">
+            <span class="forgot-password"><a href="#">Forgot Password?</a></span>
+            <input class="login-button" type="submit" value="Sign In">
+          </form>
+          <div class="signup-container">
+            <span class="title">Don't have an account?</span>
+            <button class="login-button signUp">Sign Up</button>
+          </div>
+          <button class="cross">&#10006</button>
+        </div>
+      </div>
+    
+      <!-- Sign Up Form -->
+      <div class="form-container1" style="display: none;">
+        <div class="container">
+          <div class="heading">Sign Up</div>
+          <form action="formhandler.php" method="post" class="form">
+            <input required class="input" type="text" name="username" id="username" placeholder="Username">
+            <input required class="input" type="email" name="email" id="email" placeholder="E-mail">
+            <input required class="input" type="password" name="password" id="password" placeholder="Password">
+            <input class="login-button" type="submit" value="Sign Up">
+          </form>
+          <div class="signin-container">
+            <span class="title">Already have an account?</span>
+            <button class="login-button signin">Sign In</button>
+          </div>
+          <button class="cross1">&#10006</button>
+        </div>
+      </div>
+
+      
+    <div class="form-container3" style="display: none;">
+      <div class="container3">
+        <div class="heading">Adopt this Pet</div>
+        <form action="" method="post" class="userform">
+          <input required class="input" type="text" name="username" id="username" placeholder="Username">
+          <input required class="input" type="number" name="age" id="age" placeholder="Age">
+          <div class="gender">
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="female" id="female"> Female
+            <input type="radio" name="gender" value="male" id="male"> Male
+          </div>
+          <input required class="input" type="text" name="email" id="email" placeholder="email">
+          <input required class="input" type="text" name="contact" id="contact" placeholder="Contact no">
+          <input required class="input" type="text" name="address" id="address" placeholder="address">
+          <input required class="input" type="text" name="country" id="country" placeholder="Country">
+          <textarea required class="input" name="why_adopt" id="why_adopt" placeholder="Why do you want to adopt this pet?" rows="4"></textarea>
+          <textarea required class="input" name="additional_info" id="additional_info" placeholder="Any other information we should know?" rows="4"></textarea>
+          <input class="login-button user-form-login-button" type="submit" value="Submit Application">
+        </form>
+        <button class="cross3">&#10006</button>
+      </div>
+    </div>
+
+    </div>
+
+    <section class="footer">
+
+      <div class="box-container">
+   
+         <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-phone"></i> 0311-1111111 </p>
+            <p> <i class="fas fa-phone"></i> 0311-1111111 </p>
+            <p> <i class="fas fa-envelope"></i> abc@gmail.com</p>
+            <p> <i class="fas fa-map-marker-alt"></i> Sargodha,Pakistan </p>
+         </div>
+   
+         <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook-f"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-twitter"></i> github </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="www.linkedin.com/in/maryam-zahra099"> <i class="fab fa-linkedin"></i> facebook </a>
+         </div>
+   
+      </div>
+   </section>
+    
+    <script src="script1.js"></script>
   </body>
 </html>
+
