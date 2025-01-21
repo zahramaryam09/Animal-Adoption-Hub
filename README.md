@@ -1,2 +1,2 @@
-A web Development term project using html, css, js, php and mySQL.
+This project is a frontend for an Animal Adoption Website made using HTML, CSS and Javascript. 
 
